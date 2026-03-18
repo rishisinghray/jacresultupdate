@@ -6,7 +6,7 @@ Disallow: /admin-dashboard.html
 Disallow: /RAY.html
 Disallow: /login.html
 
-Sitemap: https://jacresultupdate.com/sitemap.xml
+Sitemap: https://jacresultupdate.vercel.app/sitemap.xml
 
 User-agent: Googlebot
 Allow: /
