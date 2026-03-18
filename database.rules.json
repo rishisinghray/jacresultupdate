@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "posts": {
+      ".read": true,
+      ".write": "auth != null && auth.token.email == 'jacresultupdate@gmail.com' && auth.uid == 'rtM0skklWGTTvPRV6pst2z5ojkk1'"
+    },
+    "meta": {
+      ".read": true,
+      ".write": "auth != null && auth.token.email == 'jacresultupdate@gmail.com'"
+    },
+    "$other": {
+      ".read": false,
+      ".write": false
+    }
+  }
+}

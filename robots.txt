@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /admin-login.html
+Disallow: /admin-dashboard.html
+Disallow: /RAY.html
+Disallow: /login.html
+
+Sitemap: https://jacresultupdate.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

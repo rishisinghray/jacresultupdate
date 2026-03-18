@@ -1,0 +1,36 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "firestore.rules",
+      "firestore.indexes.json",
+      ".git",
+      "node_modules"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/404.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/admin.html",
+        "headers": [{"key": "X-Robots-Tag", "value": "noindex, nofollow"}]
+      },
+      {
+        "source": "/admin-login.html",
+        "headers": [{"key": "X-Robots-Tag", "value": "noindex, nofollow"}]
+      },
+      {
+        "source": "/admin-dashboard.html",
+        "headers": [{"key": "X-Robots-Tag", "value": "noindex, nofollow"}]
+      }
+    ]
+  }
+}

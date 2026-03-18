@@ -1,0 +1,22 @@
+/* JAC Result Update - Main Stylesheet */
+/* All inline styles are embedded in HTML for fast loading */
+/* This file is for future custom overrides */
+
+/* Custom AdSense overrides */
+.adsense-unit { display: block; text-align: center; }
+
+/* Print styles */
+@media print {
+  nav, .ticker-bar, .imp-bar, .sidebar, .tg-bar, #btt { display: none !important; }
+  body { font-size: 12pt; }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  a { text-decoration: underline; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .ticker-scroll, .imp-scroll { animation: none; }
+}

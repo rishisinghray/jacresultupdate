@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Security: No indexing, No caching for admin -->
+<link rel="canonical" href="https://jacresultupdate.com/admin.html">>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="googlebot" content="noindex,nofollow">
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="X-Robots-Tag" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Admin Panel – JAC Result Update</title>
+<meta name="description" content="Admin control panel for JAC Result Update website.">
+<meta http-equiv="X-Robots-Tag" content="noindex, nofollow">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--p:#1e3a5f;--pl:#2451a0;--acc:#e8a020;--red:#c0392b;--grn:#1a7a3c;--blu:#0d47a1;--sw:245px;--dark:#111827;--text:#111;--tx2:#4b5563;--tx3:#9ca3af;--bg:#f3f4f6;--bdr:#e5e7eb;--sh:0 1px 4px rgba(0,0,0,.08);--sh2:0 4px 20px rgba(0,0,0,.12);--r:10px;}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Hind',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+a{text-decoration:none;color:inherit;}ul{list-style:none;}
+.hidden{display:none!important;}
+
+/* LOGIN SCREEN */
+#loginScreen{position:fixed;inset:0;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);display:flex;align-items:center;justify-content:center;z-index:9999;}
+.lc{background:#fff;border-radius:18px;width:400px;max-width:95vw;overflow:hidden;box-shadow:0 25px 80px rgba(0,0,0,.5);}
+.lc-h{background:linear-gradient(135deg,#1e3a5f,#0d47a1);padding:26px;text-align:center;position:relative;}
+.lc-h::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:18px;background:#fff;clip-path:ellipse(60% 100% at 50% 100%);}
+.lc-logo{width:68px;height:68px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.4);margin-bottom:10px;}
+.lc-h h1{font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:800;color:#fff;margin-bottom:3px;}
+.lc-h p{font-size:12px;color:rgba(255,255,255,.65);}
+.lc-b{padding:26px 26px 30px;}
+.al{padding:10px 13px;border-radius:8px;font-size:13px;margin-bottom:14px;}
+.al-er{background:#fef2f2;color:#991b1b;border:1px solid #fecaca;}
+.al-ok{background:#ecfdf5;color:#065f46;border:1px solid #a7f3d0;}
+.fg{margin-bottom:14px;}
+.fg label{display:block;font-size:12.5px;font-weight:600;color:var(--tx2);margin-bottom:5px;}
+.fg input{width:100%;padding:11px 13px;border:1.5px solid var(--bdr);border-radius:8px;font-size:14px;outline:none;background:#fafafa;font-family:'Hind',sans-serif;transition:border-color .2s;}
+.fg input:focus{border-color:#0d47a1;background:#fff;box-shadow:0 0 0 3px rgba(13,71,161,.1);}
+.pw-w{position:relative;}
+.pw-w input{padding-right:40px;}
+.pw-eye{position:absolute;right:11px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;font-size:15px;}
+.lbtn{width:100%;padding:12px;background:linear-gradient(135deg,#1e3a5f,#0d47a1);color:#fff;border:none;border-radius:9px;font-family:'Baloo 2',sans-serif;font-size:15px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;}
+.lbtn:hover{background:linear-gradient(135deg,#162d4a,#0a3d8f);transform:translateY(-1px);box-shadow:0 5px 18px rgba(13,71,161,.4);}
+.lbtn:disabled{opacity:.6;cursor:not-allowed;transform:none;box-shadow:none;}
+.spin-s{width:17px;height:17px;border:2.5px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite;}
+@keyframes sp{to{transform:rotate(360deg)}}
+.back-l{text-align:center;margin-top:14px;font-size:12.5px;color:var(--tx3);}
+.back-l a{color:#0d47a1;font-weight:600;}
+.sec-note{background:#f9fafb;border:1px solid var(--bdr);border-radius:7px;padding:9px 12px;font-size:11.5px;color:var(--tx3);display:flex;align-items:center;gap:6px;margin-top:12px;}
+
+/* ADMIN DASHBOARD */
+#adminPanel{display:none;}
+
+/* SIDEBAR */
+.sb{position:fixed;top:0;left:0;width:var(--sw);height:100vh;background:var(--dark);overflow-y:auto;z-index:200;display:flex;flex-direction:column;transition:transform .3s;}
+.sb::-webkit-scrollbar{width:4px;}.sb::-webkit-scrollbar-thumb{background:#6b7280;border-radius:2px;}
+.sb-brand{padding:14px;border-bottom:1px solid #374151;display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.sb-logo{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid var(--acc);flex-shrink:0;}
+.sb-brand-txt h2{font-size:13px;font-weight:700;color:#fff;line-height:1.2;}
+.sb-brand-txt p{font-size:10px;color:#6b7280;}
+.sb-nav{flex:1;padding:8px 0;}
+.sb-sec{padding:10px 14px 3px;font-size:10px;font-weight:700;color:#6b7280;letter-spacing:1px;text-transform:uppercase;}
+.sbi{display:flex;align-items:center;gap:9px;padding:9px 14px;color:#d1d5db;font-size:13px;font-weight:500;cursor:pointer;border-left:3px solid transparent;transition:all .15s;white-space:nowrap;}
+.sbi:hover{background:#374151;color:#fff;}
+.sbi.act{background:#1f2937;color:var(--acc);border-left-color:var(--acc);}
+.sbi .ico{font-size:14px;flex-shrink:0;width:17px;text-align:center;}
+.sbi .sb-cnt{margin-left:auto;background:#ef4444;color:#fff;font-size:9px;padding:1px 5px;border-radius:8px;font-weight:700;}
+.sb-lo{padding:12px 14px;border-top:1px solid #374151;flex-shrink:0;}
+.sb-lo button{width:100%;background:#7f1d1d;color:#fca5a5;border:none;padding:9px;border-radius:7px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:'Hind',sans-serif;display:flex;align-items:center;justify-content:center;gap:7px;}
+.sb-lo button:hover{background:#991b1b;}
+
+/* TOPBAR */
+.tbar{position:fixed;top:0;left:var(--sw);right:0;height:52px;background:#fff;border-bottom:1px solid var(--bdr);display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:100;box-shadow:var(--sh);}
+.tbar-l{display:flex;align-items:center;gap:10px;}
+.mb-btn{background:none;border:none;font-size:20px;cursor:pointer;color:var(--tx2);display:none;}
+.tbar-title{font-size:14px;font-weight:700;}
+.tbar-r{display:flex;align-items:center;gap:10px;}
+.a-chip{display:flex;align-items:center;gap:7px;background:#f9fafb;border:1px solid var(--bdr);border-radius:20px;padding:4px 10px 4px 4px;}
+.a-chip img{width:26px;height:26px;border-radius:50%;object-fit:cover;}
+.a-chip span{font-size:12px;font-weight:600;}
+.a-badge{background:var(--acc);color:#fff;font-size:9px;padding:1px 6px;border-radius:8px;font-weight:700;}
+
+/* MAIN */
+.main{margin-left:var(--sw);margin-top:52px;padding:18px;min-height:calc(100vh - 52px);}
+
+/* PANELS */
+.panel{display:none;animation:fadeIn .2s ease;}
+.panel.vis{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.pg-title{font-family:'Baloo 2',sans-serif;font-size:19px;font-weight:800;margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+
+/* CARDS */
+.card{background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;margin-bottom:16px;}
+.card-h{padding:12px 15px;border-bottom:1px solid var(--bdr);display:flex;align-items:center;justify-content:space-between;}
+.card-h h3{font-size:14px;font-weight:700;display:flex;align-items:center;gap:7px;}
+.card-b{padding:15px;}
+
+/* STATS */
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:18px;}
+.sc{background:#fff;border-radius:var(--r);padding:15px;box-shadow:var(--sh);border-left:4px solid var(--pl);}
+.sc.gr{border-left-color:var(--grn);}.sc.or{border-left-color:var(--acc);}.sc.rd{border-left-color:var(--red);}.sc.bl{border-left-color:var(--blu);}
+.sc-num{font-family:'Baloo 2',sans-serif;font-size:26px;font-weight:800;line-height:1;}
+.sc-lbl{font-size:11.5px;color:var(--tx3);margin-top:4px;}
+
+/* FORM */
+.f-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(max-width:700px){.f-grid{grid-template-columns:1fr;}}
+.fg2{margin-bottom:0;}
+.fg2 label{display:block;font-size:12px;font-weight:600;color:var(--tx2);margin-bottom:5px;}
+.fg2 input,.fg2 textarea,.fg2 select{width:100%;padding:9px 12px;border:1.5px solid var(--bdr);border-radius:8px;font-size:13.5px;outline:none;background:#fafafa;font-family:'Hind',sans-serif;transition:border-color .2s;}
+.fg2 input:focus,.fg2 textarea:focus,.fg2 select:focus{border-color:var(--pl);background:#fff;box-shadow:0 0 0 3px rgba(36,81,160,.1);}
+.fg2 textarea{min-height:90px;resize:vertical;line-height:1.6;}
+.full{grid-column:1/-1;}
+.f-hint{font-size:11px;color:var(--tx3);margin-top:3px;}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 15px;border-radius:7px;border:none;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;font-family:'Hind',sans-serif;}
+.bp{background:var(--pl);color:#fff;}.bp:hover{background:var(--p);}
+.bs{background:var(--grn);color:#fff;}.bs:hover{background:#155a2c;}
+.bd{background:var(--red);color:#fff;}.bd:hover{background:#9b2a1f;}
+.bw{background:var(--acc);color:#fff;}.bw:hover{background:#c17000;}
+.bg2{background:#f3f4f6;color:var(--tx2);border:1px solid var(--bdr);}.bg2:hover{background:#e5e7eb;}
+.btn:disabled{opacity:.55;cursor:not-allowed;}
+.btn.sm{padding:5px 11px;font-size:11.5px;}
+.sp2{display:inline-block;width:13px;height:13px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite;}
+
+/* TABLE */
+.tbl-w{overflow-x:auto;}
+.tbl{width:100%;border-collapse:collapse;font-size:13px;}
+.tbl th{background:#f9fafb;color:var(--tx2);font-weight:700;padding:9px 11px;text-align:left;border-bottom:2px solid var(--bdr);white-space:nowrap;}
+.tbl td{padding:9px 11px;border-bottom:1px solid #f3f4f6;vertical-align:middle;}
+.tbl tr:hover td{background:#f9fafb;}
+.pt{font-weight:600;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.ct{display:inline-block;font-size:10.5px;padding:2px 8px;border-radius:10px;font-weight:700;}
+.cj{background:#dbeafe;color:#1e40af;}.cr{background:#d1fae5;color:#065f46;}.ca{background:#fef3c7;color:#92400e;}.cak{background:#ede9fe;color:#5b21b6;}.cs{background:#fce7f3;color:#9d174d;}.cn{background:#f3f4f6;color:#374151;}
+.sp{display:inline-block;font-size:10px;padding:2px 7px;border-radius:8px;font-weight:700;}
+.sp-pub{background:#d1fae5;color:#065f46;}.sp-dft{background:#f3f4f6;color:#6b7280;}
+
+/* ALERTS */
+.al2{padding:10px 13px;border-radius:8px;font-size:13px;display:flex;align-items:center;gap:7px;margin-bottom:12px;}
+.al2-ok{background:#ecfdf5;color:#065f46;border:1px solid #a7f3d0;}
+.al2-er{background:#fef2f2;color:#991b1b;border:1px solid #fecaca;}
+.al2-in{background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe;}
+
+/* SEO SCORE */
+.seo-row{display:flex;align-items:center;gap:8px;font-size:12px;margin:8px 0;}
+.seo-bar{flex:1;height:5px;background:#e5e7eb;border-radius:3px;overflow:hidden;}
+.seo-fill{height:100%;border-radius:3px;transition:width .4s;}
+
+/* IMAGE PATH PREVIEW */
+.img-prev{background:#f9fafb;border:1px solid var(--bdr);border-radius:8px;padding:10px;margin-top:8px;display:none;}
+.img-prev img{max-width:100%;max-height:150px;border-radius:6px;object-fit:cover;}
+.img-prev p{font-size:11px;color:var(--tx3);margin-top:4px;}
+
+/* MODAL */
+.mo{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:500;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(3px);}
+.mo-box{background:#fff;border-radius:14px;width:500px;max-width:95vw;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.3);}
+.mo-h{padding:13px 17px;border-bottom:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:center;}
+.mo-h h3{font-size:14.5px;font-weight:700;}
+.mo-close{background:none;border:none;font-size:17px;cursor:pointer;color:var(--tx3);}
+.mo-b{padding:17px;}
+.mo-f{padding:12px 17px;border-top:1px solid var(--bdr);display:flex;justify-content:flex-end;gap:8px;}
+
+/* TOGGLE */
+.tgl{position:relative;display:inline-block;width:38px;height:20px;}
+.tgl input{opacity:0;width:0;height:0;}
+.tgl-sl{position:absolute;cursor:pointer;inset:0;background:#d1d5db;border-radius:20px;transition:.3s;}
+.tgl-sl:before{content:'';position:absolute;width:14px;height:14px;left:3px;bottom:3px;background:#fff;border-radius:50%;transition:.3s;}
+.tgl input:checked+.tgl-sl{background:var(--grn);}
+.tgl input:checked+.tgl-sl:before{transform:translateX(18px);}
+
+/* MOBILE */
+@media(max-width:768px){
+  .sb{transform:translateX(-100%);}
+  .sb.open{transform:translateX(0);}
+  .ov{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:150;display:none;}
+  .ov.show{display:block;}
+  .main{margin-left:0;}
+  .tbar{left:0;}
+  .mb-btn{display:flex;}
+  .sg{grid-template-columns:repeat(2,1fr);}
+}
+</style>
+<link rel="stylesheet" href="css/style.css">
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9290039250986158"
+     crossorigin="anonymous"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DHZEQ3HL0Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DHZEQ3HL0Z');
+</script>
+</head>
+<body>
+
+<!-- OVERLAY (mobile) -->
+<div class="ov" id="ov" onclick="closeSb()"></div>
+
+<!-- ═══════ LOGIN SCREEN ═══════ -->
+<div id="loginScreen">
+  <div class="lc">
+    <div class="lc-h">
+      
+      <h1>JAC Result Update</h1>
+      <p>Admin Control Panel</p>
+    </div>
+    <div class="lc-b">
+      <div id="loginAlert" class="al hidden"></div>
+      <div class="fg">
+        <label>Admin Email</label>
+        <input type="email" id="em" placeholder="admin@jacresultupdate.com" autocomplete="username">
+      </div>
+      <div class="fg">
+        <label>Password</label>
+        <div class="pw-w">
+          <input type="password" id="pw" placeholder="Password" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
+          <button class="pw-eye" onclick="togglePw()" type="button" id="eye">👁️</button>
+        </div>
+      </div>
+      <button class="lbtn" id="loginBtn" onclick="doLogin()">
+        <span id="loginTxt">🔐 Login to Admin Panel</span>
+      </button>
+      <div class="sec-note">🛡️ Authorized access only. Unauthorized access is prohibited.</div>
+      <div class="back-l"><a href="index.html">← Back to Website</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ ADMIN PANEL ═══════ -->
+<div id="adminPanel">
+
+<!-- SIDEBAR -->
+<aside class="sb" id="sb">
+  <div class="sb-brand">
+    
+    <div class="sb-brand-txt"><h2>JAC Result Update</h2><p>Admin Panel</p></div>
+  </div>
+  <nav class="sb-nav">
+    <div class="sb-sec">Main</div>
+    <div class="sbi act" data-panel="dashboard"><span class="ico">📊</span> Dashboard</div>
+    <div class="sbi" data-panel="addpost"><span class="ico">✏️</span> Add New Post</div>
+    <div class="sbi" data-panel="manage"><span class="ico">📋</span> Manage Posts <span class="sb-cnt" id="totalCount">0</span></div>
+    <div class="sb-sec">Categories</div>
+    <div class="sbi" data-panel="manage" data-cat="jobs"><span class="ico">💼</span> Govt Jobs</div>
+    <div class="sbi" data-panel="manage" data-cat="result"><span class="ico">📊</span> Results</div>
+    <div class="sbi" data-panel="manage" data-cat="admit"><span class="ico">🎫</span> Admit Card</div>
+    <div class="sbi" data-panel="manage" data-cat="answer"><span class="ico">🔑</span> Answer Key</div>
+    <div class="sbi" data-panel="manage" data-cat="scholarship"><span class="ico">🎓</span> Scholarship</div>
+    <div class="sbi" data-panel="manage" data-cat="news"><span class="ico">📰</span> Education News</div>
+    <div class="sb-sec">Settings</div>
+    <div class="sbi" data-panel="seo"><span class="ico">🔍</span> SEO Settings</div>
+    <div class="sbi" data-panel="settings"><span class="ico">⚙️</span> Site Settings</div>
+    <div class="sbi" data-panel="sitemap"><span class="ico">🗺️</span> Sitemap</div>
+  </nav>
+  <div class="sb-lo"><button onclick="doLogout()">🚪 Logout</button></div>
+</aside>
+
+<!-- TOPBAR -->
+<div class="tbar">
+  <div class="tbar-l">
+    <button class="mb-btn" onclick="toggleSb()">☰</button>
+    <span class="tbar-title" id="tbarTitle">📊 Dashboard</span>
+  </div>
+  <div class="tbar-r">
+    <div class="a-chip">
+      
+      <span id="adminName">Admin</span>
+      <span class="a-badge">ADMIN</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="main">
+
+<!-- ─── DASHBOARD ─── -->
+<div id="p-dashboard" class="panel vis">
+  <h2 class="pg-title">📊 Dashboard Overview</h2>
+  <div class="sg">
+    <div class="sc"><div class="sc-num" id="s-all">0</div><div class="sc-lbl">Total Posts</div></div>
+    <div class="sc gr"><div class="sc-num" id="s-jobs">0</div><div class="sc-lbl">Govt Jobs</div></div>
+    <div class="sc or"><div class="sc-num" id="s-result">0</div><div class="sc-lbl">Results</div></div>
+    <div class="sc rd"><div class="sc-num" id="s-admit">0</div><div class="sc-lbl">Admit Cards</div></div>
+    <div class="sc bl"><div class="sc-num" id="s-sch">0</div><div class="sc-lbl">Scholarships</div></div>
+    <div class="sc"><div class="sc-num" id="s-news">0</div><div class="sc-lbl">News Posts</div></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+    <div class="card">
+      <div class="card-h"><h3>🕐 Recent Posts</h3></div>
+      <div class="card-b" id="recentPosts"><p style="color:var(--tx3);font-size:13px">Loading...</p></div>
+    </div>
+    <div class="card">
+      <div class="card-h"><h3>⚡ Quick Actions</h3></div>
+      <div class="card-b" style="display:flex;flex-direction:column;gap:8px">
+        <button class="btn bp" onclick="showPanel('addpost')">✏️ Add New Post</button>
+        <button class="btn bs" onclick="showPanel('manage')">📋 Manage Posts</button>
+        <button class="btn bw" onclick="showPanel('seo')">🔍 SEO Settings</button>
+        <button class="btn bg2" onclick="updateSitemapNow()">🗺️ Update Sitemap</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── ADD POST ─── -->
+<div id="p-addpost" class="panel">
+  <h2 class="pg-title">✏️ Add New Post</h2>
+  <div id="ap-al" class="al2 hidden"></div>
+
+  <div class="card">
+    <div class="card-h"><h3>📝 Post Details</h3></div>
+    <div class="card-b">
+      <div class="f-grid">
+        <div class="fg2 full">
+          <label>Post Title *</label>
+          <input type="text" id="ap-title" placeholder="e.g. JAC 12th Result 2026 – Science, Commerce, Arts" oninput="calcSEO()">
+        </div>
+        <div class="fg2">
+          <label>Category *</label>
+          <select id="ap-cat" onchange="calcSEO()">
+            <option value="">-- Select --</option>
+            <option value="jobs">💼 Jharkhand Govt Jobs</option>
+            <option value="result">📊 Result</option>
+            <option value="admit">🎫 Admit Card</option>
+            <option value="answer">🔑 Answer Key</option>
+            <option value="syllabus">📚 Syllabus</option>
+            <option value="scholarship">🎓 Scholarship</option>
+            <option value="news">📰 Education News</option>
+          </select>
+        </div>
+        <div class="fg2">
+          <label>Status</label>
+          <select id="ap-status">
+            <option value="published">✅ Published</option>
+            <option value="draft">📝 Draft</option>
+          </select>
+        </div>
+        <div class="fg2 full">
+          <label>Description *</label>
+          <textarea id="ap-desc" placeholder="Full post description..." rows="5" oninput="calcSEO()"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h3>📅 Job / Exam Details</h3></div>
+    <div class="card-b">
+      <div class="f-grid">
+        <div class="fg2"><label>Start Date</label><input type="text" id="ap-start" placeholder="e.g. 01 March 2026"></div>
+        <div class="fg2"><label>Last Date / Result Date</label><input type="text" id="ap-last" placeholder="e.g. 30 April 2026"></div>
+        <div class="fg2"><label>Application Fee</label><input type="text" id="ap-fee" placeholder="e.g. ₹100 (Gen) | ₹25 (SC/ST) | Free"></div>
+        <div class="fg2"><label>Age Limit</label><input type="text" id="ap-age" placeholder="e.g. 18-35 Years"></div>
+        <div class="fg2"><label>Total Posts / Vacancy</label><input type="text" id="ap-posts" placeholder="e.g. 2025 Posts"></div>
+        <div class="fg2"><label>Qualification</label><input type="text" id="ap-qual" placeholder="e.g. Graduation + B.Ed"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h3>🔗 Important Links</h3></div>
+    <div class="card-b">
+      <div class="f-grid">
+        <div class="fg2"><label>Apply Online / Result Link</label><input type="url" id="ap-apply" placeholder="https://..."></div>
+        <div class="fg2"><label>Result Link 2</label><input type="url" id="ap-result" placeholder="https://..."></div>
+        <div class="fg2"><label>PDF / Notification Link</label><input type="url" id="ap-pdf" placeholder="https://... (PDF)"></div>
+        <div class="fg2"><label>Official Website</label><input type="url" id="ap-official" placeholder="https://..."></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h3>🖼️ Post Image (Local Path)</h3></div>
+    <div class="card-b">
+      <div class="fg2">
+        <label>Image Path from images/ folder</label>
+        <input type="text" id="ap-img" placeholder="e.g. images/jobs/job1.jpg" oninput="previewImg()">
+        <div class="f-hint">Example paths: images/jobs/job1.jpg | images/results/jac10.jpg | images/admit-card/admit1.jpg</div>
+      </div>
+      <div class="img-prev" id="imgPrev">
+        <img id="prevImg" src="" alt="Preview" onerror="this.parentElement.querySelector('p').textContent='Image not found at this path. Make sure the file exists in your images/ folder.'">
+        <p id="prevTxt"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h3>🔍 SEO (Auto-Generated)</h3></div>
+    <div class="card-b">
+      <div id="seo-sc-row" class="seo-row hidden">
+        <span style="font-size:12px;font-weight:600;color:var(--tx2)">SEO Score:</span>
+        <div class="seo-bar"><div class="seo-fill" id="seo-fill" style="width:0%;background:#22c55e"></div></div>
+        <span id="seo-val" style="font-weight:700">0%</span>
+      </div>
+      <div class="f-grid" style="margin-top:10px">
+        <div class="fg2 full"><label>Meta Title</label>
+          <input type="text" id="ap-mt" placeholder="Auto-generated">
+          <div class="f-hint" id="mt-cnt">0/60 chars</div>
+        </div>
+        <div class="fg2 full"><label>Meta Description</label>
+          <textarea id="ap-md" rows="2" style="min-height:56px" placeholder="Auto-generated" oninput="cntMD()"></textarea>
+          <div class="f-hint" id="md-cnt">0/160 chars</div>
+        </div>
+        <div class="fg2 full"><label>Keywords</label><input type="text" id="ap-kw" placeholder="Auto-generated"></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px">
+    <button class="btn bs" onclick="pubPost()"><span id="pub-txt">✅ Publish Post</span></button>
+    <button class="btn bg2" onclick="draftPost()">📝 Save as Draft</button>
+    <button class="btn bd sm" onclick="resetForm()">✕ Reset</button>
+  </div>
+</div>
+
+<!-- ─── MANAGE POSTS ─── -->
+<div id="p-manage" class="panel">
+  <h2 class="pg-title">📋 Manage Posts</h2>
+  <div class="card">
+    <div class="card-h">
+      <h3>All Posts</h3>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <input type="text" id="srch" placeholder="🔍 Search..." style="padding:6px 10px;border:1px solid var(--bdr);border-radius:7px;font-size:13px;outline:none;width:190px" oninput="filterTbl()">
+        <select id="catFilter" onchange="filterTbl()" style="padding:6px 10px;border:1px solid var(--bdr);border-radius:7px;font-size:13px;outline:none">
+          <option value="">All Categories</option>
+          <option value="jobs">Govt Jobs</option><option value="result">Results</option>
+          <option value="admit">Admit Card</option><option value="answer">Answer Key</option>
+          <option value="syllabus">Syllabus</option><option value="scholarship">Scholarship</option>
+          <option value="news">Education News</option>
+        </select>
+        <button class="btn bp sm" onclick="showPanel('addpost')">+ Add New</button>
+      </div>
+    </div>
+    <div class="card-b">
+      <div class="tbl-w">
+        <table class="tbl">
+          <thead><tr><th>#</th><th>Title</th><th>Category</th><th>Image</th><th>Status</th><th>Date</th><th>Actions</th></tr></thead>
+          <tbody id="postsTbl"><tr><td colspan="7" style="text-align:center;padding:24px;color:var(--tx3)">Loading posts...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── SEO SETTINGS ─── -->
+<div id="p-seo" class="panel">
+  <h2 class="pg-title">🔍 SEO Settings</h2>
+  <div id="seo-al" class="al2 hidden"></div>
+  <div class="card">
+    <div class="card-h"><h3>🌐 Website SEO</h3></div>
+    <div class="card-b">
+      <div class="f-grid">
+        <div class="fg2 full"><label>Website Title</label><input type="text" id="seo-t" value="JAC Result Update 2026 – JAC Result, Jharkhand Govt Job, Latest Vacancy"></div>
+        <div class="fg2 full"><label>Meta Description</label><textarea id="seo-d" rows="3">JAC Result Update: Check JAC 10th Result 2026, JAC 12th Result 2026, Jharkhand Sarkari Result, Govt Job, Latest Vacancy, Admit Card and Syllabus 2026.</textarea></div>
+        <div class="fg2 full"><label>Keywords</label><textarea id="seo-k" rows="2">jac result update,jharkhand sarkari result,jac 10th result 2026,jac 12th result 2026,jharkhand govt job</textarea></div>
+        <div class="fg2"><label>Google Analytics ID</label><input type="text" id="seo-ga" value="G-DHZEQ3HL0Z"></div>
+        <div class="fg2"><label>AdSense Publisher ID</label><input type="text" id="seo-ads" placeholder="ca-pub-XXXXXXXXXXXXXXXX"></div>
+      </div>
+    </div>
+  </div>
+  <button class="btn bs" onclick="saveSEO()">💾 Save SEO Settings</button>
+</div>
+
+<!-- ─── SITE SETTINGS ─── -->
+<div id="p-settings" class="panel">
+  <h2 class="pg-title">⚙️ Site Settings</h2>
+  <div id="set-al" class="al2 hidden"></div>
+  <div class="card">
+    <div class="card-h"><h3>🌐 General</h3></div>
+    <div class="card-b">
+      <div class="f-grid">
+        <div class="fg2"><label>Site Name</label><input type="text" id="set-name" value="JAC Result Update"></div>
+        <div class="fg2"><label>Tagline</label><input type="text" id="set-tag" value="JAC Result • Admit Card • Model Paper • Syllabus"></div>
+        <div class="fg2"><label>Contact Email</label><input type="email" id="set-em" value="contact@jacresultupdate.com"></div>
+        <div class="fg2"><label>Website URL</label><input type="text" id="set-url" value="https://www.jacresultupdate.com"></div>
+        <div class="fg2"><label>Telegram Channel URL</label><input type="text" id="set-tg" value="https://t.me/JacResultUpdate"></div>
+        <div class="fg2"><label>WhatsApp Channel URL</label><input type="text" id="set-wa" value="https://whatsapp.com/channel/0029Vb7hubz7IUYa8nqCCa3D"></div>
+      </div>
+    </div>
+  </div>
+  <button class="btn bs" onclick="saveSettings()">💾 Save Settings</button>
+</div>
+
+<!-- ─── SITEMAP ─── -->
+<div id="p-sitemap" class="panel">
+  <h2 class="pg-title">🗺️ Sitemap Manager</h2>
+  <div class="card">
+    <div class="card-h"><h3>XML Sitemap</h3></div>
+    <div class="card-b">
+      <p style="font-size:13.5px;color:var(--tx2);margin-bottom:14px">Sitemap automatically updates when you publish a new post. You can also manually regenerate it.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px">
+        <button class="btn bp" onclick="updateSitemapNow()">🔄 Regenerate Sitemap</button>
+        <a href="sitemap.xml" target="_blank" class="btn bg2">👁️ View sitemap.xml</a>
+      </div>
+      <div id="sm-al" class="al2 hidden"></div>
+      <div style="background:#f9fafb;border:1px solid var(--bdr);border-radius:8px;padding:12px;font-size:12.5px;color:var(--tx3)">
+        <strong style="color:var(--text)">Sitemap URL:</strong> https://www.jacresultupdate.com/sitemap.xml<br>
+        <strong style="color:var(--text)">Auto-update:</strong> ✅ Enabled on every post publish<br>
+        <strong style="color:var(--text)">Last Updated:</strong> <span id="smDate">–</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+</div><!-- /adminPanel -->
+
+<!-- EDIT MODAL -->
+<div class="mo hidden" id="editMo">
+  <div class="mo-box">
+    <div class="mo-h"><h3>✏️ Edit Post</h3><button class="mo-close" onclick="closeMo('editMo')">✕</button></div>
+    <div class="mo-b">
+      <div class="f-grid">
+        <div class="fg2 full"><label>Title *</label><input type="text" id="e-title"></div>
+        <div class="fg2"><label>Category *</label>
+          <select id="e-cat">
+            <option value="jobs">Govt Jobs</option><option value="result">Result</option>
+            <option value="admit">Admit Card</option><option value="answer">Answer Key</option>
+            <option value="syllabus">Syllabus</option><option value="scholarship">Scholarship</option>
+            <option value="news">Education News</option>
+          </select>
+        </div>
+        <div class="fg2"><label>Status</label>
+          <select id="e-status"><option value="published">✅ Published</option><option value="draft">📝 Draft</option></select>
+        </div>
+        <div class="fg2 full"><label>Description</label><textarea id="e-desc" rows="4"></textarea></div>
+        <div class="fg2"><label>Apply / Result Link</label><input type="url" id="e-apply"></div>
+        <div class="fg2"><label>PDF Link</label><input type="url" id="e-pdf"></div>
+        <div class="fg2"><label>Official Website</label><input type="url" id="e-official"></div>
+        <div class="fg2"><label>Last Date</label><input type="text" id="e-last"></div>
+        <div class="fg2"><label>Fee</label><input type="text" id="e-fee"></div>
+        <div class="fg2"><label>Total Posts</label><input type="text" id="e-posts"></div>
+        <div class="fg2 full">
+          <label>Image Path</label>
+          <input type="text" id="e-img" placeholder="e.g. images/jobs/job1.jpg">
+          <div class="f-hint">Enter path from local images/ folder</div>
+        </div>
+      </div>
+      <input type="hidden" id="e-id">
+    </div>
+    <div class="mo-f"><button class="btn bg2" onclick="closeMo('editMo')">Cancel</button><button class="btn bs" onclick="saveEdit()">💾 Save Changes</button></div>
+  </div>
+</div>
+
+<!-- DELETE MODAL -->
+<div class="mo hidden" id="delMo">
+  <div class="mo-box" style="max-width:360px">
+    <div class="mo-h"><h3>🗑️ Delete Post</h3><button class="mo-close" onclick="closeMo('delMo')">✕</button></div>
+    <div class="mo-b"><p style="font-size:14px;color:var(--tx2)">Are you sure you want to delete <strong id="del-t">"this post"</strong>?</p><p style="font-size:12px;color:var(--tx3);margin-top:5px">This cannot be undone.</p><input type="hidden" id="del-id"></div>
+    <div class="mo-f"><button class="btn bg2" onclick="closeMo('delMo')">Cancel</button><button class="btn bd" onclick="confirmDel()">🗑️ Delete</button></div>
+  </div>
+</div>
+
+<!-- ═══════ FIREBASE + LOGIC ═══════ -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+import { getFirestore, collection, doc, addDoc, updateDoc, deleteDoc,
+  query, orderBy, onSnapshot, serverTimestamp, setDoc, getDoc }
+  from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+const app  = initializeApp({apiKey:"AIzaSyBvPSRgNmtclW_t7kX9DQ6e_5eBFiE6mB4",authDomain:"ru-chat-ray.firebaseapp.com",projectId:"ru-chat-ray",storageBucket:"ru-chat-ray.firebasestorage.app",messagingSenderId:"699416202588",appId:"1:699416202588:web:03868dec990dfeb56e8599"});
+const auth = getAuth(app);
+const db   = getFirestore(app);
+
+const ADMIN_EMAIL = "jacresultupdate@gmail.com";
+const ADMIN_UID  = 'rtM0skklWGTTvPRV6pst2z5ojgk1';
+const ADMIN_UID2 = 'f7vtLRKDnwZhrvreyaaYnISzCrG2';
+const ADMIN_UID2 = 'f7vtLRKDnwZhrvreyaaYnISzCrG2';
+const ADMIN_UID2 = 'f7vtLRKDnwZhrvreyaaYnISzCrG2';
+const ADMIN_UID2 = 'f7vtLRKDnwZhrvreyaaYnISzCrG2';
+const ADMIN_UID2 = "f7vtLRKDnwZhrvreyaaYnISzCrG2";
+const ADMIN_UID2 = 'f7vtLRKDnwZhrvreyaaYnISzCrG2';
+const ADMIN_UID2 = 'f7vtLRKDnwZhrvreyaaYnISzCrG2';
+const $ = id => document.getElementById(id);
+
+let allPosts = [];
+let filteredPosts = [];
+
+// ── AUTH STATE ──────────────────────────────────────────────
+onAuthStateChanged(auth, user => {
+  if (user && (user.email === ADMIN_EMAIL || (((((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222) || ((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222)2 || ((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222) || ((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222)22) || (((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222) || ((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222)2 || ((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222) || ((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222)22)2) || ((((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222) || ((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222)2 || ((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222) || ((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222)22) || (((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222) || ((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222)2 || ((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222) || ((((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)22 || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || (((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2) || {...}.uid === ADMIN_UID2 || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)2) || ((user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22) || (user.uid === ADMIN_UID || user.uid === ADMIN_UID || user.uid === ADMIN_UID22)2)222)22)2)2))) {
+    $('loginScreen').style.display   = 'none';
+    $('adminPanel').style.display    = 'block';
+    $('adminName').textContent        = user.displayName || user.email?.split('@')[0] || 'Admin';
+    loadPosts();
+    loadSitemapDate();
+  } else if (user) {
+    // Wrong user
+    auth.signOut();
+    showLoginAlert('er','🚫 Access Denied. Admin only.');
+  } else {
+    $('loginScreen').style.display   = 'flex';
+    $('adminPanel').style.display    = 'none';
+  }
+});
+
+// ── LOGIN ───────────────────────────────────────────────────
+window.doLogin = async () => {
+  const em = $('em').value.trim();
+  const pw = $('pw').value;
+  if (!em) { showLoginAlert('er','Please enter email.'); return; }
+  if (!pw) { showLoginAlert('er','Please enter password.'); return; }
+  const btn = $('loginBtn'); const txt = $('loginTxt');
+  btn.disabled = true; txt.innerHTML = '<span class="spin-s"></span> Verifying...';
+  try {
+    const c = await signInWithEmailAndPassword(auth, em, pw);
+    if (c.user.email !== ADMIN_EMAIL && c.((((((user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22) && (user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22)2) && ((user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22) && (user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22)2)2) && ((user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22) && (user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22)2)2) && ((((user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22) && (user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22)2) && ((user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22) && (user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22)2)2) && ((user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22) && (user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22)2)2)2) && (((((user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22) && (user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22)2) && ((user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22) && (user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22)2)2) && ((user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22) && (user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22)2)2) && ((((user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22) && (user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22)2) && ((user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22) && (user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22)2)2) && ((user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22) && (user.uid !== ADMIN_UID && user.uid !== ADMIN_UID && user.uid !== ADMIN_UID22)2)2)2)2)) {
+      await auth.signOut();
+      showLoginAlert('er','🚫 Access Denied.');
+    }
+  } catch(e) {
+    const msg = e.code==='auth/invalid-credential'||e.code==='auth/wrong-password'
+      ? '❌ Incorrect email or password.' : '❌ ' + e.message.replace('Firebase: ','');
+    showLoginAlert('er', msg);
+  }
+  btn.disabled = false; txt.textContent = '🔐 Login to Admin Panel';
+};
+
+function showLoginAlert(type, msg) {
+  const el = $('loginAlert');
+  el.className = `al al-${type}`;
+  el.textContent = msg;
+  el.classList.remove('hidden');
+}
+
+// ── LOGOUT ──────────────────────────────────────────────────
+window.doLogout = async () => {
+  await signOut(auth);
+};
+
+// ── LOAD POSTS (real-time) ───────────────────────────────────
+function loadPosts() {
+  const q = query(collection(db,'posts'), orderBy('createdAt','desc'));
+  onSnapshot(q, snap => {
+    allPosts = snap.docs.map(d => ({id:d.id,...d.data()}));
+    filteredPosts = [...allPosts];
+    updateStats();
+    renderPosts(filteredPosts);
+    renderRecent(allPosts.slice(0,5));
+    $('totalCount').textContent = allPosts.length;
+  });
+}
+
+function updateStats() {
+  $('s-all').textContent    = allPosts.length;
+  $('s-jobs').textContent   = allPosts.filter(p=>p.category==='jobs').length;
+  $('s-result').textContent = allPosts.filter(p=>p.category==='result').length;
+  $('s-admit').textContent  = allPosts.filter(p=>p.category==='admit').length;
+  $('s-sch').textContent    = allPosts.filter(p=>p.category==='scholarship').length;
+  $('s-news').textContent   = allPosts.filter(p=>p.category==='news').length;
+}
+
+function renderRecent(posts) {
+  const el = $('recentPosts');
+  if (!posts.length) { el.innerHTML='<p style="color:var(--tx3);font-size:13px">No posts yet. Add your first post!</p>'; return; }
+  const catIco = {jobs:'💼',result:'📊',admit:'🎫',answer:'🔑',syllabus:'📚',scholarship:'🎓',news:'📰'};
+  el.innerHTML = posts.map(p => {
+    const ts = p.createdAt?.seconds ? p.createdAt.seconds*1000 : Date.now();
+    return `<div style="display:flex;align-items:flex-start;gap:9px;padding:7px 0;border-bottom:1px solid #f3f4f6">
+      <span style="font-size:18px;flex-shrink:0">${catIco[p.category]||'📄'}</span>
+      <div><p style="font-size:12.5px;font-weight:500">${p.title?.substring(0,55)}${p.title?.length>55?'...':''}</p>
+      <span style="font-size:11px;color:var(--tx3)">${p.category} • ${new Date(ts).toLocaleDateString('en-IN')}</span></div>
+    </div>`;
+  }).join('');
+}
+
+function renderPosts(posts) {
+  const tbody = $('postsTbl');
+  const catLbl = {jobs:'Govt Jobs',result:'Result',admit:'Admit Card',answer:'Answer Key',syllabus:'Syllabus',scholarship:'Scholarship',news:'News'};
+  const catCls = {jobs:'cj',result:'cr',admit:'ca',answer:'cak',syllabus:'tp',scholarship:'cs',news:'cn'};
+  if (!posts.length) { tbody.innerHTML='<tr><td colspan="7" style="text-align:center;padding:24px;color:var(--tx3)">No posts found.</td></tr>'; return; }
+  tbody.innerHTML = posts.map((p,i) => {
+    const ts = p.createdAt?.seconds ? p.createdAt.seconds*1000 : Date.now();
+    const hasImg = p.imagePath && p.imagePath.trim();
+    return `<tr>
+      <td>${i+1}</td>
+      <td class="pt" title="${p.title||''}">${(p.title||'').substring(0,48)}${(p.title||'').length>48?'...':''}</td>
+      <td><span class="ct ${catCls[p.category]||'cn'}">${catLbl[p.category]||p.category}</span></td>
+      <td>${hasImg ? `<img src="${p.imagePath}" style="width:40px;height:30px;object-fit:cover;border-radius:4px;border:1px solid var(--bdr)" onerror="this.style.display='none'">` : '<span style="color:var(--tx3);font-size:11px">No image</span>'}</td>
+      <td><span class="sp ${p.status==='published'?'sp-pub':'sp-dft'}">${p.status==='published'?'Published':'Draft'}</span></td>
+      <td style="font-size:12px;color:var(--tx3);white-space:nowrap">${new Date(ts).toLocaleDateString('en-IN')}</td>
+      <td style="white-space:nowrap">
+        <button class="btn bg2 sm" onclick="openEdit('${p.id}')">✏️ Edit</button>
+        <button class="btn bd sm" onclick="openDel('${p.id}','${(p.title||'').replace(/'/g,"\'")}')" style="margin-left:4px">🗑️</button>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+// ── FILTER TABLE ────────────────────────────────────────────
+window.filterTbl = () => {
+  const q2 = $('srch').value.trim().toLowerCase();
+  const cat = $('catFilter').value;
+  filteredPosts = allPosts.filter(p =>
+    (!cat || p.category===cat) &&
+    (!q2 || (p.title||'').toLowerCase().includes(q2))
+  );
+  renderPosts(filteredPosts);
+};
+
+// ── PUBLISH POST ─────────────────────────────────────────────
+async function savePost(status) {
+  const title = $('ap-title').value.trim();
+  const cat   = $('ap-cat').value;
+  const desc  = $('ap-desc').value.trim();
+  if (!title) { showAl('ap-al','er','⚠️ Title required.'); return; }
+  if (!cat)   { showAl('ap-al','er','⚠️ Category required.'); return; }
+
+  const btn = document.querySelector('#p-addpost .btn.bs');
+  const txt = $('pub-txt');
+  if(btn) btn.disabled=true;
+  if(txt) txt.innerHTML='<span class="sp2"></span> Saving...';
+
+  try {
+    const post = {
+      title, category:cat, description:desc, status,
+      startDate:   $('ap-start').value.trim(),
+      lastDate:    $('ap-last').value.trim(),
+      fee:         $('ap-fee').value.trim(),
+      ageLimit:    $('ap-age').value.trim(),
+      totalPosts:  $('ap-posts').value.trim(),
+      qualification: $('ap-qual').value.trim(),
+      applyLink:   $('ap-apply').value.trim(),
+      resultLink:  $('ap-result').value.trim(),
+      pdfLink:     $('ap-pdf').value.trim(),
+      officialLink:$('ap-official').value.trim(),
+      imagePath:   $('ap-img').value.trim(),
+      metaTitle:   $('ap-mt').value.trim() || title,
+      metaDesc:    $('ap-md').value.trim(),
+      keywords:    $('ap-kw').value.trim(),
+      createdAt:   serverTimestamp(),
+      updatedAt:   serverTimestamp()
+    };
+    await addDoc(collection(db,'posts'), post);
+    // Auto sitemap update
+    await setDoc(doc(db,'meta','sitemap'), {lastUpdated: serverTimestamp()}, {merge:true});
+    showAl('ap-al','ok', status==='published'
+      ? `✅ Post "<strong>${title}</strong>" published! Visible on homepage now.`
+      : `📝 Saved as draft.`);
+    resetForm();
+  } catch(e) {
+    showAl('ap-al','er','❌ Error: ' + e.message);
+  }
+  if(btn) btn.disabled=false;
+  if(txt) txt.textContent='✅ Publish Post';
+}
+
+window.pubPost   = () => savePost('published');
+window.draftPost = () => savePost('draft');
+
+// ── EDIT ────────────────────────────────────────────────────
+window.openEdit = id => {
+  const p = allPosts.find(x=>x.id===id);
+  if(!p) return;
+  $('e-id').value     = id;
+  $('e-title').value  = p.title||'';
+  $('e-cat').value    = p.category||'jobs';
+  $('e-status').value = p.status||'published';
+  $('e-desc').value   = p.description||'';
+  $('e-apply').value  = p.applyLink||'';
+  $('e-pdf').value    = p.pdfLink||'';
+  $('e-official').value=p.officialLink||'';
+  $('e-last').value   = p.lastDate||'';
+  $('e-fee').value    = p.fee||'';
+  $('e-posts').value  = p.totalPosts||'';
+  $('e-img').value    = p.imagePath||'';
+  $('editMo').classList.remove('hidden');
+};
+window.saveEdit = async () => {
+  const id = $('e-id').value;
+  if(!id) return;
+  await updateDoc(doc(db,'posts',id), {
+    title:       $('e-title').value.trim(),
+    category:    $('e-cat').value,
+    status:      $('e-status').value,
+    description: $('e-desc').value.trim(),
+    applyLink:   $('e-apply').value.trim(),
+    pdfLink:     $('e-pdf').value.trim(),
+    officialLink:$('e-official').value.trim(),
+    lastDate:    $('e-last').value.trim(),
+    fee:         $('e-fee').value.trim(),
+    totalPosts:  $('e-posts').value.trim(),
+    imagePath:   $('e-img').value.trim(),
+    updatedAt:   serverTimestamp()
+  });
+  closeMo('editMo');
+};
+
+// ── DELETE ───────────────────────────────────────────────────
+window.openDel = (id, title) => {
+  $('del-id').value = id;
+  $('del-t').textContent = '"'+title+'"';
+  $('delMo').classList.remove('hidden');
+};
+window.confirmDel = async () => {
+  const id = $('del-id').value;
+  if(!id) return;
+  await deleteDoc(doc(db,'posts',id));
+  closeMo('delMo');
+};
+
+// ── SEO AUTO-CALC ────────────────────────────────────────────
+const catKW = {jobs:'jharkhand govt job,sarkari naukri jharkhand',result:'jharkhand result,jac result',admit:'admit card jharkhand',answer:'answer key jharkhand',syllabus:'syllabus jharkhand',scholarship:'scholarship jharkhand,e-kalyan',news:'education news jharkhand'};
+window.calcSEO = () => {
+  const t = $('ap-title').value.trim();
+  const d = $('ap-desc').value.trim();
+  const c = $('ap-cat').value;
+  if(!t) return;
+  const mt = (t.length>52 ? t.substring(0,52)+'...' : t) + ' | JAC Result Update';
+  const md = d ? d.substring(0,150)+'...' : `${t} – Check latest updates on JAC Result Update.`;
+  const kw = `${t.toLowerCase()},${catKW[c]||'jac result update'},jacresultupdate.com,jharkhand 2026`;
+  $('ap-mt').value = mt.substring(0,60);
+  $('ap-md').value = md.substring(0,160);
+  $('ap-kw').value = kw.substring(0,200);
+  $('mt-cnt').textContent = mt.length+'/60 chars';
+  $('md-cnt').textContent = md.length+'/160 chars';
+  let sc=0;
+  if(t.length>=15) sc+=20; if(d.length>=80) sc+=25; if(c) sc+=15;
+  if($('ap-apply').value) sc+=20; if($('ap-last').value) sc+=10; if($('ap-img').value) sc+=10;
+  $('seo-sc-row').classList.remove('hidden');
+  $('seo-fill').style.width = sc+'%';
+  $('seo-fill').style.background = sc>=80?'#22c55e':sc>=50?'#f59e0b':'#ef4444';
+  $('seo-val').textContent = sc+'%';
+  $('seo-val').style.color = sc>=80?'var(--grn)':sc>=50?'var(--acc)':'var(--red)';
+};
+window.cntMD = () => {
+  const v=$('ap-md').value;
+  $('md-cnt').textContent=v.length+'/160 chars';
+  $('md-cnt').style.color=v.length>160?'var(--red)':'var(--tx3)';
+};
+
+// ── IMAGE PREVIEW ────────────────────────────────────────────
+window.previewImg = () => {
+  const path = $('ap-img').value.trim();
+  const prev = $('imgPrev');
+  if(!path){ prev.style.display='none'; return; }
+  $('prevImg').src = path;
+  $('prevTxt').textContent = 'Path: '+path;
+  prev.style.display = 'block';
+};
+
+// ── SAVE SEO ────────────────────────────────────────────────
+window.saveSEO = async () => {
+  await setDoc(doc(db,'meta','seo'), {
+    title:$('seo-t').value,desc:$('seo-d').value,
+    keywords:$('seo-k').value,ga:$('seo-ga').value,adsense:$('seo-ads').value,
+    updatedAt:serverTimestamp()
+  },{merge:true});
+  showAl('seo-al','ok','✅ SEO settings saved!');
+};
+
+// ── SAVE SETTINGS ────────────────────────────────────────────
+window.saveSettings = async () => {
+  await setDoc(doc(db,'meta','settings'), {
+    name:$('set-name').value,tagline:$('set-tag').value,
+    email:$('set-em').value,url:$('set-url').value,
+    telegram:$('set-tg').value,whatsapp:$('set-wa').value,
+    updatedAt:serverTimestamp()
+  },{merge:true});
+  showAl('set-al','ok','✅ Settings saved!');
+};
+
+// ── SITEMAP ──────────────────────────────────────────────────
+window.updateSitemapNow = async () => {
+  showAl('sm-al','in','🔄 Updating sitemap...');
+  await setDoc(doc(db,'meta','sitemap'),{lastUpdated:serverTimestamp()},{merge:true});
+  setTimeout(()=>{
+    showAl('sm-al','ok','✅ Sitemap updated!');
+    $('smDate').textContent = new Date().toLocaleString('en-IN');
+  },600);
+};
+async function loadSitemapDate(){
+  try{
+    const s = await getDoc(doc(db,'meta','sitemap'));
+    if(s.exists()){
+      const ts = s.data().lastUpdated?.seconds;
+      if(ts) $('smDate').textContent = new Date(ts*1000).toLocaleString('en-IN');
+    }
+  }catch{}
+}
+
+// ── RESET FORM ───────────────────────────────────────────────
+window.resetForm = () => {
+  ['ap-title','ap-desc','ap-start','ap-last','ap-fee','ap-age','ap-posts','ap-qual','ap-apply','ap-result','ap-pdf','ap-official','ap-img','ap-mt','ap-md','ap-kw'].forEach(id=>$(id).value='');
+  $('ap-cat').value=''; $('ap-status').value='published';
+  $('imgPrev').style.display='none'; $('seo-sc-row').classList.add('hidden');
+  $('ap-al').classList.add('hidden');
+};
+
+// ── UTILITIES ────────────────────────────────────────────────
+function showAl(id, type, msg) {
+  const el=$(id); if(!el) return;
+  el.className=`al2 al2-${type}`; el.innerHTML=msg;
+  el.classList.remove('hidden');
+  clearTimeout(el._t);
+  el._t=setTimeout(()=>el.classList.add('hidden'),6000);
+}
+window.closeMo = id => document.getElementById(id).classList.add('hidden');
+</script>
+
+<script>
+// Panel switching
+function showPanel(name, cat) {
+  document.querySelectorAll('.panel').forEach(p=>{p.classList.remove('vis');p.style.display='none';});
+  const el = document.getElementById('p-'+name);
+  if(el){el.classList.add('vis');el.style.display='block';}
+  document.querySelectorAll('.sbi').forEach(b=>b.classList.remove('act'));
+  const titles = {dashboard:'📊 Dashboard',addpost:'✏️ Add New Post',manage:'📋 Manage Posts',seo:'🔍 SEO Settings',settings:'⚙️ Site Settings',sitemap:'🗺️ Sitemap'};
+  document.getElementById('tbarTitle').textContent = titles[name]||name;
+  closeSb();
+  if(cat && name==='manage') {
+    const cf = document.getElementById('catFilter');
+    if(cf) cf.value=cat;
+    window.filterTbl && filterTbl();
+  }
+}
+window.showPanel = showPanel;
+document.querySelectorAll('.sbi[data-panel]').forEach(b=>{
+  b.addEventListener('click',()=>showPanel(b.dataset.panel, b.dataset.cat||null));
+});
+document.querySelectorAll('.panel').forEach(p=>{if(!p.classList.contains('vis'))p.style.display='none';});
+function toggleSb(){document.getElementById('sb').classList.toggle('open');document.getElementById('ov').classList.toggle('show');}
+function closeSb(){document.getElementById('sb').classList.remove('open');document.getElementById('ov').classList.remove('show');}
+window.toggleSb=toggleSb;window.closeSb=closeSb;
+window.togglePw=()=>{const i=document.getElementById('pw');const e=document.getElementById('eye');i.type=i.type==='password'?'text':'password';e.textContent=i.type==='text'?'🙈':'👁️';};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelectorAll('.mo').forEach(m=>m.classList.add('hidden'));}  });
+</script>
+</body>
+</html>

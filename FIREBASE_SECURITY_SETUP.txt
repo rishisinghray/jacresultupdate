@@ -1,0 +1,66 @@
+# Firebase Security Setup Guide
+# JAC Result Update – jacresultupdate.com
+
+## STEP 1: Firestore Rules
+==============================
+Go to: Firebase Console → Firestore → Rules
+Copy-paste the firestore.rules file content:
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /posts/{postId} {
+      allow read: if true;
+      allow write: if request.auth != null
+        && request.auth.token.email == "jacresultupdate@gmail.com"
+        && request.auth.uid == "rtM0skklWGTTvPRV6pst2z5ojgk1";
+    }
+
+    match /meta/{docId} {
+      allow read: if true;
+      allow write: if request.auth != null
+        && request.auth.token.email == "jacresultupdate@gmail.com"
+        && request.auth.uid == "rtM0skklWGTTvPRV6pst2z5ojgk1";
+    }
+
+    match /media/{mediaId} {
+      allow read: if true;
+      allow write: if request.auth != null
+        && request.auth.token.email == "jacresultupdate@gmail.com"
+        && request.auth.uid == "rtM0skklWGTTvPRV6pst2z5ojgk1";
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+
+## STEP 2: Firebase Authentication
+==============================
+Go to: Firebase Console → Authentication → Settings
+- Enable Email/Password provider
+- Only allow: jacresultupdate@gmail.com
+
+## STEP 3: Verify Admin UID
+==============================
+Go to: Firebase Console → Authentication → Users
+- Email: jacresultupdate@gmail.com
+- UID should be: rtM0skklWGTTvPRV6pst2z5ojgk1
+- If different, update in admin.html and admin-login.html
+
+## STEP 4: Test Security
+==============================
+1. Try login with wrong email → Should show "Access Denied"
+2. Try accessing admin.html without login → Should redirect to login
+3. Try writing to Firestore without auth → Should be blocked
+
+## SECURITY CHECKLIST
+==============================
+[x] Firestore rules: email + UID both verified
+[x] Admin pages: noindex,nofollow
+[x] robots.txt: admin pages disallowed
+[x] Firebase Auth: email/password only
+[ ] Strong password set in Firebase Console
+[ ] Admin URL not shared publicly

@@ -1,0 +1,41 @@
+# JAC Result Update – Security Setup Guide
+
+## 1. Firebase Console – Firestore Rules
+Go to: console.firebase.google.com
+→ Project: ru-chat-ray
+→ Firestore Database → Rules tab
+→ Copy content from FIRESTORE_RULES.txt
+→ Click "Publish"
+
+## 2. Firebase Authentication
+→ Authentication → Sign-in method
+→ Enable: Email/Password ONLY
+→ Disable: All other providers (Google, Facebook etc.)
+
+## 3. Firebase Authentication – Users
+→ Authentication → Users
+→ Only ONE user should exist: jacresultupdate@gmail.com
+→ Delete any other users
+
+## 4. Admin Pages Security (Already Done)
+→ admin.html         → noindex, nofollow ✓
+→ admin-login.html   → noindex, nofollow ✓
+→ admin-dashboard.html → noindex, nofollow ✓
+
+## 5. robots.txt (Already Done)
+→ Disallow: /admin.html ✓
+→ Disallow: /admin-login.html ✓
+→ Disallow: /admin-dashboard.html ✓
+
+## 6. IMPORTANT – Never Share
+→ Admin URL: yoursite.com/admin.html
+→ Firebase Config
+→ Admin Password
+→ Admin UID
+
+## 7. Strong Password Tips
+→ Minimum 12 characters
+→ Mix of letters, numbers, symbols
+→ Example: Jac@2026#Result!
+
+## Security Level After Setup: 🔒🔒🔒 HIGH
