@@ -9,7 +9,7 @@ service cloud.firestore {
 
       // WRITE only by verified admin (email + UID both must match)
       allow write: if request.auth != null
-        && request.auth.uid == 'rtM0skklWGTTvPRV6pst2z5ojgk1'
+        && request.auth.uid == 'J4uTRXuYUTS6c5UfqcPbX50x8xj1'
         && request.auth.token.email == 'jacresultupdate@gmail.com';
     }
 
@@ -20,7 +20,7 @@ service cloud.firestore {
 
       // Write only by admin
       allow write: if request.auth != null
-        && request.auth.uid == 'rtM0skklWGTTvPRV6pst2z5ojgk1'
+        && request.auth.uid == 'J4uTRXuYUTS6c5UfqcPbX50x8xj1'
         && request.auth.token.email == 'jacresultupdate@gmail.com';
     }
 
@@ -28,7 +28,7 @@ service cloud.firestore {
     match /media/{mediaId} {
       allow read: if true;
       allow write: if request.auth != null
-        && request.auth.uid == 'rtM0skklWGTTvPRV6pst2z5ojgk1'
+        && request.auth.uid == 'J4uTRXuYUTS6c5UfqcPbX50x8xj1'
         && request.auth.token.email == 'jacresultupdate@gmail.com';
     }
 

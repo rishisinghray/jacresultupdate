@@ -41,4 +41,4 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-console.log('JAC Result Update | jacresultupdate.com');
+console.log('JAC Result Update | jacresultupdate.vercel.app');

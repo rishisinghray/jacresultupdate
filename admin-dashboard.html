@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <!-- Security: No indexing, No caching for admin -->
-<link rel="canonical" href="https://jacresultupdate.com/admin-dashboard.html">>
+<link rel="canonical" href="https://jacresultupdate.vercel.app/admin-dashboard.html">>
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
 <meta name="googlebot" content="noindex,nofollow">
 <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
@@ -544,8 +544,8 @@ img{max-width:100%;height:auto;}
     <div class="card-b">
       <div class="fg"><label>Site Name</label><input type="text" id="set-name" value="JAC Result Update"></div>
       <div class="fg"><label>Site Tagline</label><input type="text" id="set-tagline" value="JAC Result • Admit Card • Model Paper • Syllabus"></div>
-      <div class="fg"><label>Website URL</label><input type="text" id="set-url" value="https://www.jacresultupdate.com"></div>
-      <div class="fg"><label>Contact Email</label><input type="email" id="set-email" value="contact@jacresultupdate.com"></div>
+      <div class="fg"><label>Website URL</label><input type="text" id="set-url" value="https://jacresultupdate.vercel.app"></div>
+      <div class="fg"><label>Contact Email</label><input type="email" id="set-email" value="contact@jacresultupdate.vercel.app"></div>
       <div class="fg"><label>Telegram Channel</label><input type="text" id="set-tg" value="https://t.me/JacResultUpdate"></div>
       <div class="fg"><label>WhatsApp Channel</label><input type="text" id="set-wa" value="https://whatsapp.com/channel/0029Vb7hubz7IUYa8nqCCa3D"></div>
     </div>
@@ -577,7 +577,7 @@ img{max-width:100%;height:auto;}
       </div>
       <div id="sitemap-status" class="al al-in hidden"></div>
       <div style="background:#f9fafb;border:1px solid var(--bdr);border-radius:8px;padding:12px;font-size:12px;color:var(--tx3)">
-        <strong>Sitemap URL:</strong> https://www.jacresultupdate.com/sitemap.xml<br>
+        <strong>Sitemap URL:</strong> https://jacresultupdate.vercel.app/sitemap.xml<br>
         <strong>Auto-update:</strong> Enabled<br>
         <strong>Last Updated:</strong> <span id="sitemapLastUpdated">Never</span>
       </div>
@@ -1000,7 +1000,7 @@ window.autoSEO = () => {
   const catKw = {jobs:'jharkhand govt job,sarkari naukri jharkhand',result:'jharkhand result,jac result',admit:'admit card,hall ticket',answer:'answer key,answer sheet',scholarship:'scholarship jharkhand,e-kalyan',news:'education news jharkhand'};
   const metaTitle = title.length > 55 ? title.substring(0,55)+'...' : title + ' | JAC Result Update';
   const metaDesc  = desc ? desc.substring(0,150)+'...' : `${title} – Check latest updates on JAC Result Update. Get complete details, important dates and direct links.`;
-  const keywords  = `${title.toLowerCase()},${catKw[cat]||'jac result update'},jacresultupdate.com,jharkhand 2026`;
+  const keywords  = `${title.toLowerCase()},${catKw[cat]||'jac result update'},jacresultupdate.vercel.app,jharkhand 2026`;
 
   $('ap-meta-title').value = metaTitle.substring(0,60);
   $('ap-meta-desc').value  = metaDesc.substring(0,160);

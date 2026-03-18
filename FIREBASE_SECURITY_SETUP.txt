@@ -1,5 +1,5 @@
 # Firebase Security Setup Guide
-# JAC Result Update – jacresultupdate.com
+# JAC Result Update – jacresultupdate.vercel.app
 
 ## STEP 1: Firestore Rules
 ==============================

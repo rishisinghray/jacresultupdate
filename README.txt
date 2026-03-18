@@ -1,3 +1,3 @@
-Upload your syllabus images here.
-Example: syllabus1.jpg, syllabus2.jpg
-Then in admin panel enter path: images/syllabus/syllabus1.jpg
+Upload your results images here.
+Example: results1.jpg, results2.jpg
+Then in admin panel enter path: images/results/results1.jpg
