@@ -248,4 +248,9 @@ nav{background:#1a5276;}
 <button onclick="window.scrollTo({top:0,behavior:'smooth'})" id="btt">↑</button>
 <script>window.addEventListener('scroll',function(){document.getElementById('btt').style.display=window.scrollY>300?'block':'none';});document.addEventListener('keydown',function(e){if(e.key==='Escape')window.closePM&&closePM();});document.querySelector('.ntog')&&document.querySelector('.ntog').addEventListener('click',function(){document.getElementById('nl').classList.toggle('open');});</script>
 <script>window.addEventListener('scroll',function(){document.getElementById('btt').style.display=window.scrollY>300?'block':'none';});</script>
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body></html>
