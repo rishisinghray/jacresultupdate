@@ -1,0 +1,9 @@
+# Security Policy – JAC Result Update
+# https://jacresultupdate.vercel.app
+
+Contact: jacresultupdate@gmail.com
+Preferred-Languages: en, hi
+Canonical: https://jacresultupdate.vercel.app/security.txt
+
+# This site is an educational information website for Jharkhand Academic Council (JAC) results.
+# It does not collect sensitive user data or perform any malicious activity.
