@@ -173,4 +173,9 @@ const found=_p.filter(p=>(p.title||'').toLowerCase().includes(q2)||(p.descriptio
 const ic={'jobs':'💼','result':'📊','admit':'🎫','answer':'🔑','syllabus':'📚','scholarship':'🎓','entrance':'🏫','news':'📰'};
 res.innerHTML=found.length?found.map(p=>`<div class="sritem" onclick="closeSrch();openPM('${p.id}')"><span style="font-size:16px">${ic[p.category]||'📄'}</span><div><div class="srtitle">${p.title}</div><div class="srmeta">${CL[p.category]||p.category}</div></div></div>`).join(''):`<div class="srempty">No results for "${q2}"</div>`;};</script>
 <script>window.addEventListener('scroll',function(){document.getElementById('btt').style.display=window.scrollY>300?'block':'none';});document.addEventListener('keydown',function(e){if(e.key==='Escape'){window.closePM&&closePM();window.closeSrch&&closeSrch();}});var si=document.getElementById('srInp');if(si)si.addEventListener('keydown',function(e){if(e.key==='Enter')openSrch();}); </script>
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body></html>

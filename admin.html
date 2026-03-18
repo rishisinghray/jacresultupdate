@@ -934,5 +934,10 @@ window.toggleSb=toggleSb;window.closeSb=closeSb;
 window.togglePw=()=>{const i=document.getElementById('pw');const e=document.getElementById('eye');i.type=i.type==='password'?'text':'password';e.textContent=i.type==='text'?'🙈':'👁️';};
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelectorAll('.mo').forEach(m=>m.classList.add('hidden'));}  });
 </script>
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
