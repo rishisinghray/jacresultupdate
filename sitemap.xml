@@ -3,260 +3,307 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Home -->
   <url>
-    <loc>https://jacresultupdate.com/</loc>
+    <loc>https://jacresultupdate.vercel.app/</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
+
+  <!-- Core Category Pages -->
   <url>
-    <loc>https://jacresultupdate.com/latest-jobs.html</loc>
+    <loc>https://jacresultupdate.vercel.app/latest-jobs.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/results.html</loc>
+    <loc>https://jacresultupdate.vercel.app/results.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/admit-card.html</loc>
+    <loc>https://jacresultupdate.vercel.app/admit-card.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/answer-key.html</loc>
+    <loc>https://jacresultupdate.vercel.app/answer-key.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/syllabus.html</loc>
+    <loc>https://jacresultupdate.vercel.app/syllabus.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/scholarship.html</loc>
+    <loc>https://jacresultupdate.vercel.app/scholarship.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/education-news.html</loc>
+    <loc>https://jacresultupdate.vercel.app/education-news.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
+
+  <!-- JAC Results -->
   <url>
-    <loc>https://jacresultupdate.com/jac-12th-result-2026.html</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://jacresultupdate.com/jac-11th-result-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://jacresultupdate.com/jac-10th-result-2026.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jac-12th-result-2026.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/jac-9th-result-2026.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jac-11th-result-2026.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jacresultupdate.vercel.app/jac-10th-result-2026.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://jacresultupdate.vercel.app/jac-9th-result-2026.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/jac-8th-result-2026.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jac-8th-result-2026.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
+
+  <!-- Admit Cards -->
   <url>
-    <loc>https://jacresultupdate.com/jac-admit-card-2026.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jac-admit-card-2026.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/jssc-admit-card-2026.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jssc-admit-card-2026.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
+
+  <!-- Jharkhand Jobs / Vacancies -->
   <url>
-    <loc>https://jacresultupdate.com/jharkhand-teacher-vacancy.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jharkhand-teacher-vacancy.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/jharkhand-police-vacancy.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jharkhand-police-vacancy.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/jharkhand-latest-vacancy.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jharkhand-latest-vacancy.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/jharkhand-govt-job.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jharkhand-govt-job.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/jharkhand-anm-vacancy.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jharkhand-anm-vacancy.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/jssc-recruitment.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jharkhand-forest-guard-2026.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
+
+  <!-- JSSC / JPSC -->
   <url>
-    <loc>https://jacresultupdate.com/jpsc-recruitment.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jssc-recruitment.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/jssc-result.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jpsc-recruitment.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jacresultupdate.vercel.app/jssc-result.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/jpsc-result.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jpsc-result.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
+
+  <!-- Other Results -->
   <url>
-    <loc>https://jacresultupdate.com/jharkhand-polytechnic-result.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jharkhand-polytechnic-result.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/jharkhand-bed-result.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jharkhand-bed-result.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/jssc-cgl-syllabus.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jharkhand-bed-entrance-2026.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
+
+  <!-- Syllabus -->
   <url>
-    <loc>https://jacresultupdate.com/jharkhand-tet-syllabus.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jssc-cgl-syllabus.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/e-kalyan-scholarship-2026.html</loc>
+    <loc>https://jacresultupdate.vercel.app/jharkhand-tet-syllabus.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
+  </url>
+
+  <!-- Scholarship -->
+  <url>
+    <loc>https://jacresultupdate.vercel.app/e-kalyan-scholarship-2026.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Timetable & Model Papers -->
+  <url>
+    <loc>https://jacresultupdate.vercel.app/jac-time-table-2026.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/search.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://jacresultupdate.vercel.app/jac-model-paper-2026.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog / Guide Articles -->
+  <url>
+    <loc>https://jacresultupdate.vercel.app/jac-10th-result-kaise-check-kare.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jacresultupdate.vercel.app/jac-12th-result-kaise-check-kare.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jacresultupdate.vercel.app/jssc-cgl-syllabus-complete-guide.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jacresultupdate.vercel.app/jharkhand-teacher-vacancy-guide.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jacresultupdate.vercel.app/e-kalyan-scholarship-apply-guide.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jacresultupdate.vercel.app/jharkhand-scholarship-complete-guide.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Utility Pages -->
+  <url>
+    <loc>https://jacresultupdate.vercel.app/search.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/sitemap.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://jacresultupdate.com/about.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://jacresultupdate.vercel.app/sitemap.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
+
+  <!-- Static / Info Pages -->
   <url>
-    <loc>https://jacresultupdate.com/contact.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://jacresultupdate.vercel.app/about.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-    <lastmod>2026-03-17</lastmod>
   </url>
   <url>
-    <loc>https://jacresultupdate.com/privacy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://jacresultupdate.com/disclaimer.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://jacresultupdate.com/terms.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.jacresultupdate.com/jac-10th-result-kaise-check-kare.html</loc>
+    <loc>https://jacresultupdate.vercel.app/contact.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.jacresultupdate.com/jssc-cgl-syllabus-complete-guide.html</loc>
+    <loc>https://jacresultupdate.vercel.app/privacy.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.jacresultupdate.com/jharkhand-teacher-vacancy-guide.html</loc>
+    <loc>https://jacresultupdate.vercel.app/disclaimer.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.jacresultupdate.com/e-kalyan-scholarship-apply-guide.html</loc>
+    <loc>https://jacresultupdate.vercel.app/terms.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
+    <priority>0.5</priority>
   </url>
-  <url>
-    <loc>https://www.jacresultupdate.com/jac-12th-result-kaise-check-kare.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.jacresultupdate.com/jharkhand-scholarship-complete-guide.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-03-17</lastmod>
-  </url>
-  <url><loc>https://jacresultupdate.com/jac-time-table-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2026-03-18</lastmod></url>
-  <url><loc>https://jacresultupdate.com/jac-model-paper-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2026-03-18</lastmod></url>
-  <url><loc>https://jacresultupdate.com/jharkhand-bed-entrance-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2026-03-18</lastmod></url>
-  <url><loc>https://jacresultupdate.com/jharkhand-forest-guard-2026.html</loc><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2026-03-18</lastmod></url>
+
 </urlset>
